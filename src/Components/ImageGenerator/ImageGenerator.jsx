@@ -12,6 +12,7 @@ const ImageGenerator = () => {
         if (inputRef.current.value===""){
             return 0;
         }
+        
         setLoading(true);
         const response = await fetch(
             "https://api.openai.com/v1/images/generations",
